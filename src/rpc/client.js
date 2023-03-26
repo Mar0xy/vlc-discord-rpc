@@ -17,10 +17,10 @@ let timeInactive = 0;
  * Responsible for updating the
    user's presence.
 */
-function update() {
-  diff((status, difference) => {
+async function update() {
+  diff(async (status, difference) => {
     if (difference) {
-      client.setActivity(format(status));
+      await client.setActivity(await format(status));
       console.log("Presence updated")
 
       if (!awake) {
