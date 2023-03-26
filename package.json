@@ -1,9 +1,10 @@
 {
   "name": "vlc-discord-rpc",
-  "version": "2.2.12",
+  "version": "2.3.0",
   "description": "Discord rich presence for VLC media player.",
   "main": "index.js",
   "dependencies": {
+    "album-art": "^3.1.0",
     "discord-rpc": "^3.1.1",
     "vlc.js": "^3.1.0"
   },
@@ -13,10 +14,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Pigpog/vlc-discord-rpc.git"
+    "url": "git+https://github.com/Mar0xy/vlc-discord-rpc.git"
   },
   "keywords": [],
-  "author": "Pigpog",
+  "author": "Mar0xy",
   "contributors": [
     {
       "name": "dylhack",
@@ -25,7 +26,7 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Pigpog/vlc-discord-rpc/issues"
+    "url": "https://github.com/Mar0xy/vlc-discord-rpc/issues"
   },
-  "homepage": "https://github.com/Pigpog/vlc-discord-rpc#readme"
+  "homepage": "https://github.com/Mar0xy/vlc-discord-rpc#readme"
 }
