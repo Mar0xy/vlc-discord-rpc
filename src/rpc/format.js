@@ -20,7 +20,7 @@ module.exports = async (status) => {
   const { meta } = status.information.category;
   const output = {
     details: meta.title || meta.filename,
-    largeImageKey: albumArt[meta.album] || await albumArtmod(meta.artist, {album: meta.album}) || config.rpc.largeIcon,
+    largeImageKey: albumArt[meta.album] || meta.artist ? await albumArtmod(meta.artist, {album: meta.album}) : config.rpc.largeIcon || config.rpc.largeIcon,
     smallImageKey: status.state,
     smallImageText: `Volume: ${Math.round(status.volume / 2.56)}%`,
     instance: true,
